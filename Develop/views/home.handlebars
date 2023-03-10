@@ -1,0 +1,22 @@
+<div class="row mb-4">
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each products}}
+          <tr>
+            <td>{{product_name}}</td>
+            <td>{{price}}</td>
+            <td>{{description}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
