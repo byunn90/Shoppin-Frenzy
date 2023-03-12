@@ -4,6 +4,9 @@
   background-color: transparent;
   border-collapse: collapse;
 }
+.shopping-Frenzy {
+  margin-right: 10px;
+}
 
 .table th,
 .table td {
@@ -24,6 +27,9 @@
 .table-hover tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.075);
 }
+.bg-light {
+  background-color: #ffb84c !important;
+}
 
 /* Custom CSS for navbar */
 
@@ -40,6 +46,7 @@
 .navbar-nav .nav-item:last-child {
   margin-right: 0; /* Remove right margin on last item */
 }
+/* Navbar background color ⬇⬇⬇⬇ */
 
 .nav-link {
   color: #333; /* Change link color */
@@ -77,12 +84,12 @@
 }
 
 .btn-outline-success {
-  color: #28a745; /* Change button color */
-  border-color: #28a745; /* Change button border color */
+  color: #000; /* Change button color */
+  border-color: #000; /* Change button border color */
   font-weight: bold; /* Add some boldness */
 }
 
 .btn-outline-success:hover {
-  background-color: #28a745; /* Change button background color on hover */
+  background-color: #000; /* Change button background color on hover */
   color: #fff; /* Change button color on hover */
 }

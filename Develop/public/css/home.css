@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px;
+  max-width: 300px;
+}
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 8px;
+}
+
+.card .price {
+  font-weight: bold;
+}
+
+.card .stock {
+  color: #999;
+}
