@@ -23,6 +23,10 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     category_id: {
       type: DataTypes.INTEGER,
       references: {
