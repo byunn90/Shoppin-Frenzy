@@ -13,13 +13,14 @@ router.get("/", async (req, res) => {
   //     res.status(500).send(error);
   //   }
 });
-
-router.get("/:id", async (req, res) => {
+router.get("/:product_name", async (req, res) => {
   try {
     console.log("Hi");
-    const products = await Product.findOne({
+    const products = await Product.findAll({
       where: {
-        id: req.params.id,
+        product_name: {
+          [Op.like]: `%${req.params.product_name}%`,
+        },
       },
       include: [{ model: Category }],
     });

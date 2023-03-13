@@ -15,33 +15,15 @@ router.get("/", async (req, res) => {
     res.status(500).send(error);
   }
 });
-// router.get("/products", async (req, res) => {
-//   try {
-//     console.log("Hi");
-//     const products = await Product.findAll({
-//       include: [{ model: products }],
-//     });
-//     // Serialize data so the template can read it
-//     const productsData = products.map((project) =>
-//       project.get({ plain: true })
-//     );
-//     res.render("home", { products: productsData });
-//   } catch (error) {
-//     res.status(500).send(error);
-//   }
-// });
 
-// Has not been completed yet!
-// router.get("/reviews", async (req, res) => {
-//   //   try {
-//   console.log("Hi");
-//   const products = await Product.findAll({
-//     include: [{ model: Category }],
-//   });
-//   res.status(200).json(products);
-//   //   } catch (error) {
-//   //     res.status(500).send(error);
-//   //   }
-// });
+router.get("/login", (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect("/profile");
+    return;
+  }
+
+  res.render("login");
+});
 
 module.exports = router;

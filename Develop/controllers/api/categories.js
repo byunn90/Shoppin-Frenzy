@@ -14,24 +14,23 @@ router.get("/", async (req, res) => {
       include: [{ model: Product }],
     });
     res.status(200).json(category);
-
-  }catch (error) {
-       res.status(500).send(error);
-      }
+  } catch (error) {
+    res.status(500).send(error);
+  }
 });
 
-router.get("/:name", async (req,res) => {
-  try{
+router.get("/:category_name", async (req, res) => {
+  try {
     console.log("Hi");
     const category = await Category.findOne({
       where: {
-        name: req.params.category_name,
+        category_name: req.params.category_name,
       },
-      include: [{model: Product}],
+      include: [{ model: Product }],
     });
     res.status(200).json(category);
-  }catch (error){
+  } catch (error) {
     res.status(500).send(error);
   }
-})
+});
 module.exports = router;

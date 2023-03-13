@@ -7,6 +7,9 @@
 .shopping-Frenzy {
   margin-right: 10px;
 }
+.navbar {
+  column-gap: 30px;
+}
 
 .table th,
 .table td {
