@@ -4,12 +4,15 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 16px;
-  margin: 16px;
+  margin: 30px;
   max-width: 300px;
+  row-gap: 10px;
+  text-align: center;
 }
 .product-container {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .card h3 {
   font-size: 24px;
