@@ -1,0 +1,16 @@
+{{! category.handlebars }}
+{{#extend "layout"}}
+
+  {{#content "main"}}
+    <h1>{{category.category_name}}</h1>
+    {{#each category.products}}
+      <div class="product">
+        <h2>{{product_name}}</h2>
+        <img src="{{product_image}}" alt="{{product_name}}" />
+        <p>{{product_description}}</p>
+        <p>Price: {{product_price}}</p>
+      </div>
+    {{/each}}
+  {{/content}}
+
+{{/extend}}
