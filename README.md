@@ -10,8 +10,6 @@ eccomerce website
 
 ## Usage:
 
-## Video
-
 ## Contact-details
 
 ## Contributors

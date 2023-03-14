@@ -94,7 +94,11 @@
         </form>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign in</a>
+            {{#if logged_in}}
+              <button class="no-button" id="logout">logout</button>
+            {{else}}
+              <a class="nav-link" href="/login">Sign in</a>
+            {{/if}}
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Returns & Orders</a>
@@ -105,6 +109,66 @@
         </ul>
       </div>
     </nav>
+
     {{{body}}}
+    <footer>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Values</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping &amp; Returns</h4>
+        <ul>
+          <li><a href="#">Shipping Rates</a></li>
+          <li><a href="#">Delivery Times</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>FAQs</h4>
+        <ul>
+          <li><a href="#">General Questions</a></li>
+          <li><a href="#">Product Information</a></li>
+          <li><a href="#">Payment &amp; Security</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Privacy Policy</h4>
+        <ul>
+          <li><a href="#">Privacy Statement</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/logout.js"></script>
   </body>
 </html>
