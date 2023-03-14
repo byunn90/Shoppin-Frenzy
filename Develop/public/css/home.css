@@ -30,3 +30,39 @@
 .card .stock {
   color: #999;
 }
+
+footer {
+  background-color: #f9f9f9;
+  color: #777;
+  font-size: 14px;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-col {
+  width: 16.666%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #555;
+}

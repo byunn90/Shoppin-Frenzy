@@ -1,5 +1,6 @@
 const { Category } = require("./categories");
 const { Product } = require("./Product");
+const User = require("./User");
 
 //Categories
 Product.belongsTo(Category, {
@@ -11,4 +12,4 @@ Category.hasMany(Product, {
   onDelete: "cascade",
 });
 
-module.exports = { Category, Product };
+module.exports = { Category, Product, User };
