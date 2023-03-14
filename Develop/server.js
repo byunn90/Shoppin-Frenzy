@@ -20,9 +20,6 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// Use the routes
-// app.use("/", examples);
-// app.use("/api", apiRoutes);
 const sess = {
   secret: "Super secret secret",
   cookie: {

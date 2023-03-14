@@ -29,4 +29,18 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.get("/:category", async (req, res) => {
+  try {
+    const category = await Category.findOne({
+      where: { slug: req.params.category },
+    });
+    if (!category) {
+      return res.status(404).render("404");
+    }
+    return res.render("category", { category });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
+});
 module.exports = router;
