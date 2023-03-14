@@ -31,9 +31,10 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    {{! table css ⬇⬇ }}
     <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/css/login.css"/>
+
+
     <title>Document</title>
   </head>
   <body>
@@ -71,15 +72,15 @@
               <b>Clothing</b>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">T-shirts</a>
-              <a class="dropdown-item" href="#">Hats</a>
-              <a class="dropdown-item" href="#">Sports</a>
-              <a class="dropdown-item" href="#">boxing</a>
-              <a class="dropdown-item" href="#">Jeans</a>
+              <a id="tshirts-link" class="dropdown-item" href="#">T-shirts</a>
+              <a id="hats-link" class="dropdown-item" href="#">Hats</a>
+              <a id="sports-link" class="dropdown-item" href="#">Sports</a>
+              <a id="boxing-link" class="dropdown-item" href="#">Boxing</a>
+              <a id="jeans-link" class="dropdown-item" href="#">Jeans</a>
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form action="/search" method="GET">
           <div class="input-group">
             <input
               type="search"
@@ -87,6 +88,7 @@
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
+              name="query"
             />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
               Search
@@ -156,9 +158,9 @@
       <div class="footer-col">
         <h4>Social Media</h4>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -171,5 +173,7 @@
     </footer>
 
     <script src="./js/logout.js"></script>
+    <script src="./js/shoppingFrenzy.js"></script>
+    <script src="./js/clothingCategories.js"></script>
   </body>
 </html>
