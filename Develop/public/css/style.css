@@ -31,7 +31,7 @@
   background-color: rgba(0, 0, 0, 0.075);
 }
 .bg-light {
-  background-color: #ffb84c !important;
+  background-color: #f9f9f9 !important;
 }
 
 /* Custom CSS for navbar */
@@ -58,6 +58,22 @@
 
 .nav-link:hover {
   color: #000; /* Change link color on hover */
+}
+.navbar {
+  height: 80px; /* Increase the navbar height */
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.navbar-brand {
+  font-size: 2rem; /* Increase brand font size */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem; /* Increase link font size */
+  font-weight: bold;
 }
 
 .dropdown-menu {
