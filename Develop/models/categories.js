@@ -21,6 +21,11 @@ Category.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    slug: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
   },
   {
     sequelize,

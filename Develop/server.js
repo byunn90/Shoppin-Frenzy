@@ -4,6 +4,8 @@ const routes = require("./controllers/api");
 const homeRoutes = require("./controllers/home-route");
 const expressHandlebars = require("express-handlebars");
 const session = require("express-session");
+const searchRoutes = require("./controllers/searchRoutes");
+
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 // Sets up the Express app
 const app = express();
@@ -17,7 +19,9 @@ app.use(express.urlencoded({ extended: true }));
 const hbs = expressHandlebars.create({});
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
+app.set("views", path.join(__dirname, "views"));
 
+console.log(app.get("views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 const sess = {
@@ -37,6 +41,7 @@ const sess = {
 
 app.use(session(sess));
 app.use("/api", routes);
+app.use("/search", searchRoutes);
 app.use("/", homeRoutes);
 // Sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
