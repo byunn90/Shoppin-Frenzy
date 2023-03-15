@@ -1,14 +1,21 @@
 # 🛒Shoppin-Frenzy
 
+
 ![alt text](<./Assets/Screenshot%20(58).png>)
 ![alt text](<./Assets/Screenshot%20(59).png>)
 ![alt text](<./Assets/Screenshot%20(60).png>)
 
+## Introduction
+
+This repository reflects Project-2 challenge given to students in the Monash University Coding Bootcamp.
+
+
 ## Description
 
-eccomerce website
+Welcome to Shopping Frenzy Clothing Store! We are an online clothing store that offers a wide range of clothing items for men, women, and children. Our store is designed to provide a convenient and enjoyable shopping experience for our customers.
 
-## Technologies Used:
+## Packages Used:
+
 
 - JavaScript
 - dotenv
@@ -36,6 +43,28 @@ sequelize - A promise-based ORM for Node.js.
 
 ## Contact-details
 
+Node.js
+MySQL
+Sequelize
+Express.js
+Express.Handlebars
+dotenv
+Insomina
+Bootstrap
+
+## Installation:
+
+- Clone the repository with git clone
+- npm init
+- Create a .env file in the root directory and set the following environment variables: 
+- DB_USERNAME=your-mysql-username
+- DB_PASSWORD=your-mysql-password
+- DB_DATABASE=your-mysql-database-name
+- DB_HOST=localhost
+- npm run seed
+- npm start 
+
+
 - kayhanturk90@live.com
 - lachieferg98@hotmail.com
 - tcha0074@student.monash.edu
@@ -43,7 +72,16 @@ sequelize - A promise-based ORM for Node.js.
 
 ## Contributors
 
+
 - https://github.com/Declxn77
 - https://github.com/byunn90
 - https://github.com/Lferg98
 - https://github.com/taniachahal97
+
+Kayhan Mamak
+Tania Chahal
+Lachlan Ferguson
+Declan Schembri
+
+## Application Screenshot
+
