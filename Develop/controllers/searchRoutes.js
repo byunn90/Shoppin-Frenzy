@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { Op } = require("sequelize");
 const { Category, Product } = require("../models");
-
 router.get("/", async (req, res) => {
   const { query } = req.query;
 
@@ -10,7 +9,7 @@ router.get("/", async (req, res) => {
       where: {
         [Op.or]: [
           {
-            name: {
+            product_name: {
               [Op.like]: `%${query}%`,
             },
           },
