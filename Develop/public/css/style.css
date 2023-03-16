@@ -112,3 +112,49 @@
   background-color: #000; /* Change button background color on hover */
   color: #fff; /* Change button color on hover */
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    display: none; 
+  }
+  
+  .navbar-toggler {
+    display: block; 
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff; 
+    padding: 10px; 
+    z-index: 999; 
+  }
+  
+  .navbar-collapse .nav-item {
+    margin-bottom: 10px; 
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar-nav {
+    display: none; 
+  }
+  
+  .navbar-toggler {
+    display: block; 
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff; 
+    padding: 10px; 
+    z-index: 999; 
+  }
+  
+  .navbar-collapse .nav-item {
+    margin-bottom: 10px; 
+  }
+}
