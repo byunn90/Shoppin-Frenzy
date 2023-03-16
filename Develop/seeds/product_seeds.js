@@ -1,6 +1,4 @@
-// const category_id = require("../Develop/models/categories");
-// const Product = require("../Develop/models/Product");
-const { Product } = require("../models/Product");
+const { Product } = require("../models/product");
 
 const productData = [
   {

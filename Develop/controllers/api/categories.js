@@ -13,18 +13,4 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:category_name", async (req, res) => {
-  try {
-    console.log("Hi");
-    const category = await Category.findOne({
-      where: {
-        category_name: req.params.category_name,
-      },
-      include: [{ model: Product }],
-    });
-    res.status(200).json(category);
-  } catch (error) {
-    res.status(500).send(error);
-  }
-});
 module.exports = router;

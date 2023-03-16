@@ -10,12 +10,12 @@ hatsLink.addEventListener("click", function () {
 
 const sportsLink = document.getElementById("sports-link");
 sportsLink.addEventListener("click", function () {
-  window.location.href = "/sports";
+  window.location.href = "/running-shoes";
 });
 
-const boxingLink = document.getElementById("boxing-link");
-boxingLink.addEventListener("click", function () {
-  window.location.href = "/boxing";
+const cargoShortsLink = document.getElementById("Cargo-shorts");
+cargoShortsLink.addEventListener("click", function () {
+  window.location.href = "/cargo-shorts";
 });
 
 const jeansLink = document.getElementById("jeans-link");

@@ -73,12 +73,25 @@ footer {
   .product-container {
     flex-wrap: wrap;
   }
-  
+
   .card {
     margin: 30px 10px;
   }
+  @media only screen and (max-width: 475px) {
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      flex-direction: column;
+      position: relative;
+    }
+  }
 
-  footer{
-    position: relative;
+  @media only screen and (max-width: 592px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
   }
 }
