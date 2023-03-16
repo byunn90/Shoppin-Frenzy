@@ -64,12 +64,6 @@ Bootstrap
 - npm run seed
 - npm start 
 
-
-- kayhanturk90@live.com
-- lachieferg98@hotmail.com
-- tcha0074@student.monash.edu
-- declanjschembri@outlook.com
-
 ## Contributors
 
 
@@ -78,10 +72,10 @@ Bootstrap
 - https://github.com/Lferg98
 - https://github.com/taniachahal97
 
-Kayhan Mamak
-Tania Chahal
-Lachlan Ferguson
-Declan Schembri
+- Kayhan Mamak kayhanturk90@live.com
+- Tania Chahal tcha0074@student.monash.edu
+- Lachlan Ferguson lachieferg98@hotmail.com
+- Declan Schembri https://github.com/Declxn77
 
 ## Application Screenshot
 
