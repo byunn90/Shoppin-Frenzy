@@ -1,13 +1,9 @@
 # 🛒Shoppin-Frenzy
 
 
-![alt text](<./Assets/Screenshot%20(58).png>)
-![alt text](<./Assets/Screenshot%20(59).png>)
-![alt text](<./Assets/Screenshot%20(60).png>)
+![demo](<./Assets/ss1.jpg>)
+![sign in demo](<./Assets/ss2.jpg>)
 
-## Introduction
-
-This repository reflects Project-2 challenge given to students in the Monash University Coding Bootcamp.
 
 
 ## Description
@@ -64,18 +60,12 @@ Bootstrap
 - npm run seed
 - npm start 
 
-## Contributors
+## Contributors:
+
+- Kayhan Mamak - kayhanturk90@live.com - https://github.com/byunn90
+- Declan Schembri - declanjschembri@gmail.com - https://github.com/Declxn77
+- Lachlan Ferguson - lachieferg98@hotmail.com - https://github.com/Lferg98
+- Tania Chahal - tcha0074@student.monash.edu - https://github.com/taniachahal97
 
 
-- https://github.com/Declxn77
-- https://github.com/byunn90
-- https://github.com/Lferg98
-- https://github.com/taniachahal97
-
-- Kayhan Mamak kayhanturk90@live.com
-- Tania Chahal tcha0074@student.monash.edu
-- Lachlan Ferguson lachieferg98@hotmail.com
-- Declan Schembri https://github.com/Declxn77
-
-## Application Screenshot
 
