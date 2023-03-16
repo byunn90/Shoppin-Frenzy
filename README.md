@@ -1,7 +1,7 @@
 # 🛒Shoppin-Frenzy
 
-![demo](./assets/ss1.jpg)
-![sign in demo](./assets/ss2.jpg)
+![alt text](./Develop/assets/ss1.JPG)
+![alt text](./Develop/assets/ss2.JPG)
 
 ## Description
 
