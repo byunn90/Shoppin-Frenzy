@@ -68,3 +68,17 @@ footer {
 .footer-col ul li a:hover {
   color: #555;
 }
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px 10px;
+  }
+
+  footer{
+    position: relative;
+  }
+}
