@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const routes = require("./controllers/api");
 const homeRoutes = require("./controllers/home-route");
+const categoryDropdown = require("./controllers/api/categoryDropDown");
 const expressHandlebars = require("express-handlebars");
 const session = require("express-session");
 const searchRoutes = require("./controllers/searchRoutes");
@@ -43,6 +44,7 @@ app.use(session(sess));
 app.use("/api", routes);
 app.use("/search", searchRoutes);
 app.use("/", homeRoutes);
+app.use("/", categoryDropdown);
 // Sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
