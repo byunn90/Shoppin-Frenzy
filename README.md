@@ -1,17 +1,13 @@
 # 🛒Shoppin-Frenzy
 
-
-![demo](<./assets/ss1.jpg>)
-![sign in demo](<./assets/ss2.jpg>)
-
-
+![demo](./assets/ss1.jpg)
+![sign in demo](./assets/ss2.jpg)
 
 ## Description
 
 Welcome to Shopping Frenzy Clothing Store! We are an online clothing store that offers a wide range of clothing items for men, women, and children. Our store is designed to provide a convenient and enjoyable shopping experience for our customers.
 
 ## Packages Used:
-
 
 - JavaScript
 - dotenv
@@ -52,13 +48,13 @@ Bootstrap
 
 - Clone the repository with git clone
 - npm init
-- Create a .env file in the root directory and set the following environment variables: 
+- Create a .env file in the root directory and set the following environment variables:
 - DB_USERNAME=your-mysql-username
 - DB_PASSWORD=your-mysql-password
 - DB_DATABASE=your-mysql-database-name
 - DB_HOST=localhost
 - npm run seed
-- npm start 
+- npm start
 
 ## Contributors:
 
@@ -66,6 +62,3 @@ Bootstrap
 - Declan Schembri - declanjschembri@gmail.com - https://github.com/Declxn77
 - Lachlan Ferguson - lachieferg98@hotmail.com - https://github.com/Lferg98
 - Tania Chahal - tcha0074@student.monash.edu - https://github.com/taniachahal97
-
-
-
