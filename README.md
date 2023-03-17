@@ -33,8 +33,6 @@ sequelize - A promise-based ORM for Node.js.
 - Run npm install to install all required dependencies.
 - To create the database, run npm run seed.
 
-## Contact-details
-
 Node.js
 MySQL
 Sequelize
@@ -43,18 +41,6 @@ Express.Handlebars
 dotenv
 Insomina
 Bootstrap
-
-## Installation:
-
-- Clone the repository with git clone
-- npm init
-- Create a .env file in the root directory and set the following environment variables:
-- DB_USERNAME=your-mysql-username
-- DB_PASSWORD=your-mysql-password
-- DB_DATABASE=your-mysql-database-name
-- DB_HOST=localhost
-- npm run seed
-- npm start
 
 ## Contributors:
 
