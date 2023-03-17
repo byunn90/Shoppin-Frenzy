@@ -1,1 +1,1 @@
-web: <command to start your web server>
+web: node server.js
