@@ -15,8 +15,6 @@ Welcome to Shopping Frenzy Clothing Store! We are an online clothing store that 
 - mysql2
 - sequalize
 
-## Installation:
-
 ## Built With
 
 bcrypt - A library to help you hash passwords.
@@ -30,10 +28,10 @@ sequelize - A promise-based ORM for Node.js.
 
 ## Usage:
 
-- Run npm install to install all required dependencies.
-- To create the database, run npm run seed.
+- Run npm start to start the server.
+- Visit http://localhost:3001 in your web browser to view the app.
 
-## Contact-details
+## Modules Used:
 
 Node.js
 MySQL
