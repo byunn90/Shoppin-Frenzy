@@ -31,7 +31,7 @@ sequelize - A promise-based ORM for Node.js.
 - Run npm start to start the server.
 - Visit http://localhost:3001 in your web browser to view the app.
 
-## Contact-details
+## Modules Used:
 
 Node.js
 MySQL
