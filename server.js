@@ -5,7 +5,6 @@ const homeRoutes = require("./controllers/home-route");
 const categoryDropdown = require("./controllers/api/categoryDropDown");
 const expressHandlebars = require("express-handlebars");
 const session = require("express-session");
-const searchRoutes = require("./controllers/searchRoutes");
 
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 // Sets up the Express app
@@ -42,7 +41,6 @@ const sess = {
 
 app.use(session(sess));
 app.use("/api", routes);
-app.use("/search", searchRoutes);
 app.use("/", homeRoutes);
 app.use("/", categoryDropdown);
 // Sync sequelize models to the database, then turn on the server
