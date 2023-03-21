@@ -5,8 +5,8 @@ const dropDown = require("./categoryDropDown");
 
 const user = require("./userRoutes");
 router.use("/products", products);
-router.use("/category", category);
+router.use("/", category);
 router.use("/users", user);
-router.use("/dropDown", dropDown);
+router.use("/", dropDown);
 
 module.exports = router;
