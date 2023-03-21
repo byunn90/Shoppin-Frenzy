@@ -17,11 +17,6 @@ Category.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    slug: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-    },
     filename: {
       type: DataTypes.STRING,
       allowNull: false,
