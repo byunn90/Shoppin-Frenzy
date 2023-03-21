@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const expressHandlebars = require("express-handlebars");
 const session = require("express-session");
+const routes = require("./controllers");
 
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 // Sets up the Express app
@@ -37,6 +38,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use(routes);
 // Sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {});
