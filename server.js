@@ -39,6 +39,7 @@ const sess = {
 
 app.use(session(sess));
 app.use(routes);
+app.use(express.static(path.join(__dirname, "public")));
 // Sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {});

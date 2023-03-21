@@ -32,7 +32,7 @@ router.get("/login", (req, res) => {
 router.get("/:category", async (req, res) => {
   try {
     const category = await Category.findOne({
-      where: { slug: req.params.category },
+      where: { category_name: req.params.category },
     });
     if (category) {
       return res.render("category", { category });
