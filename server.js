@@ -41,8 +41,6 @@ const sess = {
 
 app.use(session(sess));
 app.use("/api", routes);
-app.use("/", homeRoutes);
-app.use("/", categoryDropdown);
 // Sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {});
