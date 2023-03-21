@@ -34,10 +34,9 @@ router.get("/:category", async (req, res) => {
     const category = await Category.findOne({
       where: { slug: req.params.category },
     });
-    if (!category) {
-      return res.status(404).render("404");
+    if (category) {
+      return res.render("category", { category });
     }
-    return res.render("category", { category });
   } catch (err) {
     console.error(err);
     res.status(500).json(err);
