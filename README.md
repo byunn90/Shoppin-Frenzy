@@ -54,6 +54,10 @@ Bootstrap
 - npm run seed
 - npm start
 
+## Link
+
+https://shoppin-frenzy-app.herokuapp.com
+
 ## Contributors:
 
 - Kayhan Mamak - kayhanturk90@live.com - https://github.com/byunn90
